@@ -1,0 +1,20 @@
+The MNIST dataset has long served as a benchmark for evaluating machine learning algorithms, 
+especially for image classification tasks. Early approaches to MNIST relied on traditional machine 
+learning methods like k-Nearest Neighbors (k-NN), Support Vector Machines (SVMs), and Logistic 
+Regression, which used manually engineered features such as pixel intensity and geometric 
+properties. These methods achieved moderate accuracy (90–95\%), but their reliance on feature 
+extraction limited their performance. With the rise of neural networks, Multilayer Perceptrons 
+(MLPs) outperformed traditional models but struggled with high-dimensional data. This led to the 
+development of Convolutional Neural Networks (CNNs), which excel in capturing spatial hierarchies 
+in images and have achieved exceptional performance on MNIST, consistently surpassing 99\% 
+accuracy \cite{LeCun1998}.
+
+CNNs revolutionized image recognition by automating feature extraction and improving 
+generalization. The LeNet-5 architecture was one of the first CNN models for digit recognition, 
+achieving significant improvements over traditional methods \cite{LeCun1998}. Further 
+advancements, such as AlexNet, demonstrated the power of deeper architectures and GPU acceleration 
+\cite{Krizhevsky2012}. Additionally, regularization techniques like data augmentation, dropout, 
+and early stopping have been explored to enhance CNN performance and prevent overfitting. Yahia 
+Assiri’s work combined these techniques, achieving state-of-the-art results on MNIST and other 
+datasets like SVHN and STL10 \cite{Assiri2020}. A variation of these techniques is applied in this 
+report to improve the model's performance.

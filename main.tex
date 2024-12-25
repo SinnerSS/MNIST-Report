@@ -1,0 +1,106 @@
+\documentclass[a4paper, 30pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[main=USenglish]{babel}
+\usepackage[a4paper, total={160mm, 240mm}, left=30mm, top=30mm]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{diagbox}
+\usepackage{minted}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\addtolength{\topmargin}{-12.5pt}
+\setlength{\headheight}{24.5pt}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{
+ \begin{tabular}{rl}
+    \begin{picture}(25,15)(0,0)
+        \put(0,-8){\includegraphics[width=6mm]{img/logo.jpg}}
+    \end{picture} &
+	\begin{tabular}{l}
+		\textbf{\bf HaNoi University of science and technology}\\
+		\textbf{\bf School of Information and Communications Technology}
+	\end{tabular} 	
+ \end{tabular}
+}
+
+\fancyfoot{}
+\fancyfoot[L]{\scriptsize \ttfamily Project III - IT3940}
+\fancyfoot[R]{\scriptsize \ttfamily  {\thepage}}
+
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\begin{document}
+
+  \begin{titlepage}
+    
+    \begin{center}
+            \large{HaNoi University of science and technology} \\
+            \large{School of Information and Communications Technology} 
+    \end{center}
+
+    \vspace{64pt}
+
+    \begin{center}
+      \includegraphics[width=112pt]{img/logo.jpg}
+    \end{center}
+
+    \vspace{28pt}
+
+    \begin{center}
+        \large\textbf{Project III - IT3940} \\
+        
+        \par\rule{0.9\textwidth}{0.4pt}
+
+        \Large\textbf{
+          Project Report: \\[8pt]
+          Application of Convolutional Neural Networks in \\
+          MNIST Digit Classification
+        }
+        \vspace{14pt}
+    \end{center}
+
+    \vspace{16pt}
+    
+    \begin{center}
+      \hspace{48pt}
+      \begin{tabularx}{0.5\textwidth}{r@{: }l}
+        Lecturer & Ph.D. Trinh Anh Phuc \\[6pt]
+        Student  & Nguyen Tri Nghia - 20215438
+      \end{tabularx}
+    \end{center}
+
+    \vfill
+
+    \begin{center}
+        {Hanoi, 23-12-2024}
+    \end{center}
+
+  \end{titlepage}
+
+  \newpage
+  \tableofcontents
+
+  \newpage
+  \section{Introduction}
+  \input{introduction.tex}
+  \section{Literature Review}
+  \input{review.tex}
+  \section{Methodology}
+  \input{methodology.tex}
+  \section{Results}
+  \input{result.tex}
+  \section{Conclusion}
+  \input{conclusion.tex}
+
+  \newpage
+  \bibliographystyle{IEEEtran}
+  \bibliography{references}
+\end{document}
